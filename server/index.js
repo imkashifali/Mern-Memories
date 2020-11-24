@@ -13,9 +13,6 @@ app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
 app.use(cors());
 
 app.use("/posts", PostRoutes);
-
-// const CONNECTION_URL =
-//   "mongodb+srv://stay:123123123@cluster0.4nhyt.mongodb.net/<dbname>?retryWrites=true w=majority";
 const PORT = process.env.PORT || 5000;
 
 mongoose
